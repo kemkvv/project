@@ -52,7 +52,7 @@ try {
 const videos = document.querySelectorAll('video');
 
 sliderMain.on('slideChange', () => {
-    for (let i = 0; videos.length; i += 1) {
+    for (let i = 0; i < videos.length; i += 1) {
         videos[i].pause();
     }
 });
